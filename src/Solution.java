@@ -27,18 +27,35 @@ public class Solution {
 //    If N is even and in the inclusive range of 6 to 20, print Weird
 //    If N is even and greater than 20, print Not Weird
 
-        int N = scan.nextInt();
+//        int N = scan.nextInt();
+//
+//        if(N %2 !=0){
+//            System.out.println("Weird");
+//        } else if (N %2 == 0 && N >= 2 && N <= 5){
+//            System.out.println("Not Weird");
+//        } else if (N %2 == 0 && N >= 6 && N <= 20){
+//            System.out.println("Weird");
+//        } else if (N %2 == 0 && N > 20){
+//            System.out.println("Not Weird");
+//        }
 
-        if(N %2 !=0){
-            System.out.println("Weird");
-        } else if (N %2 == 0 && N >= 2 && N <= 5){
-            System.out.println("Not Weird");
-        } else if (N %2 == 0 && N >= 6 && N <= 20){
-            System.out.println("Weird");
-        } else if (N %2 == 0 && N > 20){
-            System.out.println("Not Weird");
-        }
+//   ========================================= challenge 4 ============================
+
+//        In this challenge, you must read an integer, a double, and a String from stdin, then print the values
+//        according to the instructions in the Output Format section below.
+
+        int i = scan.nextInt();
+        double d = scan.nextDouble();
+        scan.nextLine();
+        String s = scan.nextLine();
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+
 
     }
+
+
 
 }
