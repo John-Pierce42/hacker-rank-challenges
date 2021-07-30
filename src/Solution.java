@@ -56,14 +56,23 @@ public class Solution {
 
 
 //     ======================================= challenge 5 ==============================
-        System.out.println("================================");
-        for(int i = 0; i < 3; i++)
-        {
-            String s1 = scan.next();
-            int x = scan.nextInt();
-            System.out.printf( "%-15s%03d %n", s1, x);
+//        System.out.println("================================");
+//        for(int i = 0; i < 3; i++)
+//        {
+//            String s1 = scan.next();
+//            int x = scan.nextInt();
+//            System.out.printf( "%-15s%03d %n", s1, x);
+//        }
+//        System.out.println("================================");
+
+
+        int num = scan.nextInt();
+
+        for(int i = 1; i <= 10; i++){
+            System.out.println(num + " x " + i + " = " + (num * i));
         }
-        System.out.println("================================");
+
+
 
     }
 
