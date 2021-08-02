@@ -54,7 +54,6 @@ public class Solution {
 //        System.out.println("Int: " + i);
 
 
-
 //     ======================================= challenge 5 ==============================
 //        System.out.println("================================");
 //        for(int i = 0; i < 3; i++)
@@ -66,16 +65,31 @@ public class Solution {
 //        System.out.println("================================");
 
 
-        int num = scan.nextInt();
+//        int num = scan.nextInt();
+//
+//        for(int i = 1; i <= 10; i++){
+//            System.out.println(num + " x " + i + " = " + (num * i));
+//        }
 
-        for(int i = 1; i <= 10; i++){
-            System.out.println(num + " x " + i + " = " + (num * i));
+// ===========================================  challenge 6 ===========================
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        for (int i = 0; i < t; i++) {
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            for (int j = 0; j < n; j++) {
+                a += b;
+                if (j > 0)
+                    System.out.print(" ");
+                System.out.print(a);
+
+                b = b * 2;
+            }
+            System.out.println("");
+
         }
-
-
-
     }
-
 
 
 }
