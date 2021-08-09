@@ -1,4 +1,9 @@
 import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.io.*;
+import java.util.*;
 
 public class Solution {
 
@@ -125,17 +130,40 @@ public class Solution {
 
 // ================================================ 8 challenge =================================
 
-        Scanner s = new Scanner(System.in);
-        int count = 1;
+//        Scanner s = new Scanner(System.in);
+//        int count = 1;
+//
+//        while (s.hasNext()) {
+//            String ns = s.nextLine();
+//            System.out.println(count + " " + ns);
+//            count++;
+//        }
 
-        while(s.hasNext()) {
-            String ns = s.nextLine();
-            System.out.println(count + " " + ns);
-            count++;
+// ================================================9 challenge =====================================
+
+        static Scanner scan = new Scanner(System.in);
+        static int B = scan.nextInt();
+        static int H = scan.nextInt();
+        static boolean flag = true;
+
+        static {
+            try {
+                if (B <= 0 || H <= 0) {
+                    flag = false;
+                    throw new Exception("Breadth and height must be positive");
+                }
+            } catch (Exception e) {
+                System.out.print(e);
+            }
+
+
+            if (flag) {
+                int area = B * H;
+                System.out.print(area);
+            }
+
         }
 
 
     }
-
-
 }
