@@ -139,31 +139,50 @@ public class Solution {
 //            count++;
 //        }
 
-// ================================================9 challenge =====================================
+// ================================================ 9 challenge =====================================
 
-        static Scanner scan = new Scanner(System.in);
-        static int B = scan.nextInt();
-        static int H = scan.nextInt();
-        static boolean flag = true;
+//        static Scanner scan = new Scanner(System.in);
+//        static int B = scan.nextInt();
+//        static int H = scan.nextInt();
+//        static boolean flag = true;
+//
+//        static {
+//            try {
+//                if (B <= 0 || H <= 0) {
+//                    flag = false;
+//                    throw new Exception("Breadth and height must be positive");
+//                }
+//            } catch (Exception e) {
+//                System.out.print(e);
+//            }
+//
+//
+//            if (flag) {
+//                int area = B * H;
+//                System.out.print(area);
+//            }
+//
+//        }
 
-        static {
-            try {
-                if (B <= 0 || H <= 0) {
-                    flag = false;
-                    throw new Exception("Breadth and height must be positive");
-                }
-            } catch (Exception e) {
-                System.out.print(e);
-            }
+
+//   ============================================= 10 =========================================
+
+//        turning an integer into a string.
+
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+
+        String s = Integer.toString(n);
 
 
-            if (flag) {
-                int area = B * H;
-                System.out.print(area);
-            }
-
+        if (n == Integer.parseInt(s)) {
+            System.out.println("Good job");
+        } else {
+            System.out.println("Wrong answer.");
         }
+
+    }
 
 
     }
-}
+
