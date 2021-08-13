@@ -267,8 +267,14 @@ public class Solution {
         System.out.println((A.length() + B.length()));
 //        System.out.println( B.length());
 
+//        ArrayList<String> AB = new ArrayList<>();
+//        AB.add("A");
+//        AB.add("B");
+//        System.out.println(AB.indexOf("A"));
+//        System.out.println(AB.indexOf("B"));
 
-        if(A.length() > B.length()){
+
+        if(A.compareTo(B) > B.compareTo(A)){
             System.out.println("Yes");
         } else {
             System.out.println("No");
