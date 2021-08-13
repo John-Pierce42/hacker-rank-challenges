@@ -183,79 +183,97 @@ public class Solution {
 
 //        =========================================== 11 ======================================
 
-        import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
-import java.time.LocalDate;
+//        import java.io.*;
+//import java.math.*;
+//import java.security.*;
+//import java.text.*;
+//import java.util.*;
+//import java.util.concurrent.*;
+//import java.util.regex.*;
+//import java.time.LocalDate;
+//
+//        class Result {
+//
+//            /*
+//             * Complete the 'findDay' function below.
+//             *
+//             * The function is expected to return a STRING.
+//             * The function accepts following parameters:
+//             *  1. INTEGER month
+//             *  2. INTEGER day
+//             *  3. INTEGER year
+//             */
+//        }
+//        public class JavaDateAndTime {
+//            static List<String> days = Arrays.asList("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");
+//
+//
+//            public static String findDay(int month, int day, int year) {
+//
+//                int y = Integer.parseInt(year);
+//                int m = Integer.parseInt(month);
+//                int d = Integer.parseInt(day);
+//
+//                Calendar c = Calendar.getInstance();
+//                c.set(y, m-1, d);
+//
+//                int p = c.get(Calendar.DAY_OF_WEEK);
+//                String s = days.get(p-1);
+//                return s;
+//
+//            }
+//
+//            public static void main(String[] args) {
+//                Scanner in = new Scanner(System.in);
+//                String month = in.next();
+//                String day = in.next();
+//                String year = in.next();
+//
+//                System.out.println(findDay(day, month, year));
+//
+//            }
+//        }
+//
+//        public class Solution {
+//            public static void main(String[] args) throws IOException {
+//                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+//
+//                String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+//
+//                int month = Integer.parseInt(firstMultipleInput[0]);
+//
+//                int day = Integer.parseInt(firstMultipleInput[1]);
+//
+//                int year = Integer.parseInt(firstMultipleInput[2]);
+//
+//                String res = Result.findDay(month, day, year);
+//
+//                bufferedWriter.write(res);
+//                bufferedWriter.newLine();
+//
+//                bufferedReader.close();
+//                bufferedWriter.close();
+//            }
+//        }
 
-        class Result {
+//        ========================================== 12 =====================================
 
-            /*
-             * Complete the 'findDay' function below.
-             *
-             * The function is expected to return a STRING.
-             * The function accepts following parameters:
-             *  1. INTEGER month
-             *  2. INTEGER day
-             *  3. INTEGER year
-             */
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+
+        System.out.println((A.length() + B.length()));
+//        System.out.println( B.length());
+
+
+        if(A.length() > B.length()){
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
         }
-        public class JavaDateAndTime {
-            static List<String> days = Arrays.asList("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");
 
-
-            public static String findDay(int month, int day, int year) {
-
-                int y = Integer.parseInt(year);
-                int m = Integer.parseInt(month);
-                int d = Integer.parseInt(day);
-
-                Calendar c = Calendar.getInstance();
-                c.set(y, m-1, d);
-
-                int p = c.get(Calendar.DAY_OF_WEEK);
-                String s = days.get(p-1);
-                return s;
-
-            }
-
-            public static void main(String[] args) {
-                Scanner in = new Scanner(System.in);
-                String month = in.next();
-                String day = in.next();
-                String year = in.next();
-
-                System.out.println(findDay(day, month, year));
-
-            }
-        }
-
-        public class Solution {
-            public static void main(String[] args) throws IOException {
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
-                String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
-
-                int month = Integer.parseInt(firstMultipleInput[0]);
-
-                int day = Integer.parseInt(firstMultipleInput[1]);
-
-                int year = Integer.parseInt(firstMultipleInput[2]);
-
-                String res = Result.findDay(month, day, year);
-
-                bufferedWriter.write(res);
-                bufferedWriter.newLine();
-
-                bufferedReader.close();
-                bufferedWriter.close();
-            }
-        }
 
     }
 
