@@ -259,9 +259,13 @@ public class Solution {
 
 //        ========================================== 12 =====================================
 
+//        1. sum the lengths of A and B.
+//        2. determine if A is lexicographically larger the B.
+//        3. capitalize the first letter in A and B and print them on a single line, separated by a space.
+
         Scanner sc=new Scanner(System.in);
-        String A=sc.next();
-        String B=sc.next();
+        String A = sc.next();
+        String B = sc.next();
 
 
         System.out.println((A.length() + B.length()));
