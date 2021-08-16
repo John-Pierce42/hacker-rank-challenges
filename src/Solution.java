@@ -165,7 +165,7 @@ public class Solution {
 //        }
 
 
-//   ============================================= 10 =========================================
+//   ============================================= 10 challenge =========================================
 
 //        turning an integer into a string.
 //
@@ -181,7 +181,7 @@ public class Solution {
 //            System.out.println("Wrong answer.");
 //        }
 
-//        =========================================== 11 ======================================
+//        =========================================== 11 challenge ======================================
 
 //        import java.io.*;
 //import java.math.*;
@@ -257,34 +257,47 @@ public class Solution {
 //            }
 //        }
 
-//        ========================================== 12 =====================================
+//        ========================================== 12 challenge  =====================================
 
 //        1. sum the lengths of A and B.
 //        2. determine if A is lexicographically larger the B.
 //        3. capitalize the first letter in A and B and print them on a single line, separated by a space.
 
-        Scanner sc=new Scanner(System.in);
-        String A = sc.next();
-        String B = sc.next();
+//        Scanner sc=new Scanner(System.in);
+//        String A = sc.next();
+//        String B = sc.next();
+//
+//
+//        System.out.println((A.length() + B.length()));
+////        System.out.println( B.length());
+//
+////        ArrayList<String> AB = new ArrayList<>();
+////        AB.add("A");
+////        AB.add("B");
+////        System.out.println(AB.indexOf("A"));
+////        System.out.println(AB.indexOf("B"));
+//
+//
+//        if(A.compareTo(B) > B.compareTo(A)){
+//            System.out.println("Yes");
+//        } else {
+//            System.out.println("No");
+//        }
+//
+//        System.out.println(A.substring(0,1).toUpperCase() + A.substring(1) + " " + B.substring(0,1).toUpperCase() + B.substring(1));
 
+//    ===================================== 13 challenge ===================================
 
-        System.out.println((A.length() + B.length()));
-//        System.out.println( B.length());
+//        given a string, S and teo indices, start and end, print a substring consisting of all
+//        characters in the inclusive range from star to end -1.
 
-//        ArrayList<String> AB = new ArrayList<>();
-//        AB.add("A");
-//        AB.add("B");
-//        System.out.println(AB.indexOf("A"));
-//        System.out.println(AB.indexOf("B"));
+        Scanner in = new Scanner(System.in);
+        String S = in.next();
+        int start = in.nextInt();
+        int end = in.nextInt();
 
+        System.out.println(S.substring(start,end));
 
-        if(A.compareTo(B) > B.compareTo(A)){
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
-        }
-
-        System.out.println(A.substring(0,1).toUpperCase() + A.substring(1) + " " + B.substring(0,1).toUpperCase() + B.substring(1));
 
     }
 
