@@ -291,14 +291,34 @@ public class Solution {
 //        given a string, S and teo indices, start and end, print a substring consisting of all
 //        characters in the inclusive range from star to end -1.
 
-        Scanner in = new Scanner(System.in);
-        String S = in.next();
-        int start = in.nextInt();
-        int end = in.nextInt();
+//        Scanner in = new Scanner(System.in);
+//        String S = in.next();
+//        int start = in.nextInt();
+//        int end = in.nextInt();
+//
+//        System.out.println(S.substring(start,end));
 
-        System.out.println(S.substring(start,end));
+// ==================================================== 14 challenge ===============================
+
+//      given a string, s and an integer, k, complete the function so that it finds the lexicographically
+//      smallest and largest substrings of length k.
+
+        Scanner scan = new Scanner(System.in);
+        String s = scan.next();
+        int k = scan.nextInt();
+        scan.close();
+
+        System.out.println(getSmallestAndLargest(s, k));
 
 
+    }
+
+    public static String getSmallestAndLargest(String s, int k) {
+        String smallest = "";
+        String largest = "";
+
+
+        return smallest + "\n" + largest;
     }
 
 
