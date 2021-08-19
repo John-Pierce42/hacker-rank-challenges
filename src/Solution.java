@@ -303,35 +303,62 @@ public class Solution {
 //      given a string, s and an integer, k, complete the function so that it finds the lexicographically
 //      smallest and largest substrings of length k.
 
-        Scanner scan = new Scanner(System.in);
-        String s = scan.next();
-        int k = scan.nextInt();
-        scan.close();
+//        Scanner scan = new Scanner(System.in);
+//        String s = scan.next();
+//        int k = scan.nextInt();
+//        scan.close();
+//
+//        System.out.println(getSmallestAndLargest(s, k));
 
-        System.out.println(getSmallestAndLargest(s, k));
+//        ================================================== 15 challenge ==========================
+            Scanner scan = new Scanner(System.in);
+            String input = scan.next();
 
+            if(isPalindrome(input)){
+                System.out.print("Yes");
+            } else {
+                System.out.print("No");
+        }
 
     }
 
-    public static String getSmallestAndLargest(String s, int k) {
 
-        String sequence = s.substring(0, k);
+// =====================================================================================================================
+// ===================================== this is for challenge 14 ====================================
+//    public static String getSmallestAndLargest(String s, int k) {
+//
+//        String sequence = s.substring(0, k);
+//
+//        String smallest = sequence;
+//        String largest = sequence;
+//
+//        for(int i = 1; i <= (s.length() - k); i++){
+//            sequence = s.substring(i, (i + k));
+//
+//            if(sequence.compareTo(smallest) < 0){
+//                smallest = sequence;
+//            }
+//            if(sequence.compareTo(largest) > 0){
+//                largest = sequence;
+//            }
+//        }
+//
+//        return smallest + "\n" + largest;
+//    }
 
-        String smallest = sequence;
-        String largest = sequence;
+// ===================================== this is for challenge 15 ==========================
 
-        for(int i = 1; i <= (s.length() - k); i++){
-            sequence = s.substring(i, (i + k));
+    static boolean isPalindrome(String s) {
+        int i = 0, j = s.length() - 1;
 
-            if(sequence.compareTo(smallest) < 0){
-                smallest = sequence;
+        while (i < j) {
+            if (s.charAt(i) != s.charAt(j)) {
+                return false;
             }
-            if(sequence.compareTo(largest) > 0){
-                largest = sequence;
-            }
+            i++;
+            j--;
         }
-
-        return smallest + "\n" + largest;
+        return true;
     }
 
 
