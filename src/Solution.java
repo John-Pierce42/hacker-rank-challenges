@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Scanner;
 import java.text.*;
 import java.math.*;
@@ -310,41 +311,52 @@ public class Solution {
 //
 //        System.out.println(getSmallestAndLargest(s, k));
 
-//        ================================================== 15 challenge ==========================
-            Scanner scan = new Scanner(System.in);
-            String input = scan.next();
+//  ====================================================== 15 challenge ==========================
+//            Scanner scan = new Scanner(System.in);
+//            String input = scan.next();
+//
+//            if(isPalindrome(input)){
+//                System.out.print("Yes");
+//            } else {
+//                System.out.print("No");
+//        }
 
-            if(isPalindrome(input)){
-                System.out.print("Yes");
-            } else {
-                System.out.print("No");
-        }
+//   ============================================= 16 challenge ==============================
+
+//            if a and b are case-insensitive anagrams, return ture. Otherwise, return false.
+
+        Scanner scan = new Scanner(System.in);
+        String a = scan.next();
+        String b = scan.next();
+
+        boolean ret = isAnagram(a, b);
+        System.out.println((ret) ? "Anagrams" : "Not Anagrams");
 
     }
 
 
-// =====================================================================================================================
+    // ============================================== Methods ================================================================
 // ===================================== this is for challenge 14 ====================================
-//    public static String getSmallestAndLargest(String s, int k) {
-//
-//        String sequence = s.substring(0, k);
-//
-//        String smallest = sequence;
-//        String largest = sequence;
-//
-//        for(int i = 1; i <= (s.length() - k); i++){
-//            sequence = s.substring(i, (i + k));
-//
-//            if(sequence.compareTo(smallest) < 0){
-//                smallest = sequence;
-//            }
-//            if(sequence.compareTo(largest) > 0){
-//                largest = sequence;
-//            }
-//        }
-//
-//        return smallest + "\n" + largest;
-//    }
+    public static String getSmallestAndLargest(String s, int k) {
+
+        String sequence = s.substring(0, k);
+
+        String smallest = sequence;
+        String largest = sequence;
+
+        for (int i = 1; i <= (s.length() - k); i++) {
+            sequence = s.substring(i, (i + k));
+
+            if (sequence.compareTo(smallest) < 0) {
+                smallest = sequence;
+            }
+            if (sequence.compareTo(largest) > 0) {
+                largest = sequence;
+            }
+        }
+
+        return smallest + "\n" + largest;
+    }
 
 // ===================================== this is for challenge 15 ==========================
 
@@ -362,6 +374,42 @@ public class Solution {
         return true;
     }
 
+    // ===================================== this is for challenge 16 ==========================
 
+    static boolean isAnagram(String a, String b) {
+
+        a = a.replaceAll("\\s","");
+        b = b.replaceAll("\\s", "");
+
+        if(a.length() != b.length()){
+            return false;
+        } else {
+            char[] arr1 = a.toCharArray();
+            char[] arr2 = b.toCharArray();
+
+            Arrays.sort(arr1);
+            Arrays.sort(arr2);
+
+            return (Arrays.equals(arr1,arr2));
+        }
+//        int n1 = a.length();
+//        int n2 = b.length();
+//
+//
+//        if (n1 != n2) {
+//            return false;
+//        }
+//
+//
+//
+//        for (int i = 0; i < n1; i++) {
+//            if ( a.charAt(i) != b.charAt(i)) {
+//                return false;
+//            }
+//        }
+//        return true;
     }
+
+
+}
 
