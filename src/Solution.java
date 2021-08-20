@@ -378,20 +378,49 @@ public class Solution {
 
     static boolean isAnagram(String a, String b) {
 
+        // Remove all the white space
         a = a.replaceAll("\\s","");
         b = b.replaceAll("\\s", "");
 
+        // Check if both length matches
         if(a.length() != b.length()){
             return false;
         } else {
+            // Convert both Strings into lower case and into Character Array
             char[] arr1 = a.toCharArray();
             char[] arr2 = b.toCharArray();
 
+            // Sort both Character Array
             Arrays.sort(arr1);
             Arrays.sort(arr2);
 
+            // Check if both arrays are equal
             return (Arrays.equals(arr1,arr2));
         }
+
+//       ======= another solution ======
+        if (a.length() != b.length()) {
+            return false;
+        }
+        a = a.toLowerCase();
+        b = b.toLowerCase();
+        int sum = 0;
+        for (char c = 'a'; c <= 'z'; c++) {
+            for (int i=0; i<a.length(); i++) {
+                if (a.charAt(i) == c) {
+                    sum++;
+                }
+                if (b.charAt(i) == c) {
+                    sum--;
+                }
+            }
+            if (sum != 0) {
+                return false;
+            }
+        }
+        return true;
+
+//
 //        int n1 = a.length();
 //        int n2 = b.length();
 //
