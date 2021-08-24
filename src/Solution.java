@@ -184,14 +184,7 @@ public class Solution {
 
 //        =========================================== 11 challenge ======================================
 
-//        import java.io.*;
-//import java.math.*;
-//import java.security.*;
-//import java.text.*;
-//import java.util.*;
-//import java.util.concurrent.*;
-//import java.util.regex.*;
-//import java.time.LocalDate;
+
 //
 //        class Result {
 //
@@ -210,6 +203,14 @@ public class Solution {
 //
 //
 //            public static String findDay(int month, int day, int year) {
+
+// ============== actual working solution ===========================================================
+//        Calendar cal = Calendar.getInstance();
+//        cal.set(Calendar.MONTH, month-1);
+//        cal.set(Calendar.DAY_OF_MONTH, day);
+//        cal.set(Calendar.YEAR, year);
+//        return cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.US).toUpperCase();
+// ==================================================================================================
 //
 //                int y = Integer.parseInt(year);
 //                int m = Integer.parseInt(month);
@@ -325,12 +326,18 @@ public class Solution {
 
 //            if a and b are case-insensitive anagrams, return ture. Otherwise, return false.
 
-        Scanner scan = new Scanner(System.in);
-        String a = scan.next();
-        String b = scan.next();
+//        Scanner scan = new Scanner(System.in);
+//        String a = scan.next();
+//        String b = scan.next();
+//
+//        boolean ret = isAnagram(a, b);
+//        System.out.println((ret) ? "Anagrams" : "Not Anagrams");
 
-        boolean ret = isAnagram(a, b);
-        System.out.println((ret) ? "Anagrams" : "Not Anagrams");
+// ============================================= 17 challenge ==================================
+
+
+
+
 
     }
 
@@ -399,26 +406,26 @@ public class Solution {
         }
 
 //       ======= another solution ======
-        if (a.length() != b.length()) {
-            return false;
-        }
-        a = a.toLowerCase();
-        b = b.toLowerCase();
-        int sum = 0;
-        for (char c = 'a'; c <= 'z'; c++) {
-            for (int i=0; i<a.length(); i++) {
-                if (a.charAt(i) == c) {
-                    sum++;
-                }
-                if (b.charAt(i) == c) {
-                    sum--;
-                }
-            }
-            if (sum != 0) {
-                return false;
-            }
-        }
-        return true;
+//        if (a.length() != b.length()) {
+//            return false;
+//        }
+//        a = a.toLowerCase();
+//        b = b.toLowerCase();
+//        int sum = 0;
+//        for (char c = 'a'; c <= 'z'; c++) {
+//            for (int i=0; i<a.length(); i++) {
+//                if (a.charAt(i) == c) {
+//                    sum++;
+//                }
+//                if (b.charAt(i) == c) {
+//                    sum--;
+//                }
+//            }
+//            if (sum != 0) {
+//                return false;
+//            }
+//        }
+//        return true;
 
 //
 //        int n1 = a.length();
