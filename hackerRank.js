@@ -123,7 +123,20 @@ function vowelsAndConsonants(s){
         }
     }
 
+//    =================================== another solution ====================================
+//     using the includes
 
+    let vowels = ["a", "e", "i", "o", "u"];
+
+    for(let v of s) {
+        if(vowels.includes(v))
+            console.log(v);
+    }
+
+    for(let v of s) {
+        if(!vowels.includes(v))
+            console.log(v);
+    }
 }
 
 vowelsAndConsonants("javascript");
