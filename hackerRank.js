@@ -100,3 +100,30 @@ function getPerimeter(length, width) {
 
 console.log(getPerimeter(2,2));
 console.log(getArea(2,2));
+
+//================================================ 4th challenge =============================
+
+// print each vowel in s on a new line. The English vowels are a, e, i, o, u and each vowel must be printed in the same
+// order as it appeared in s.
+
+function vowelsAndConsonants(s){
+    // let vowels = ["a", "e", "i", "o", "u"];
+    for(var i = 0; i < s.length; i++){
+        // console.log(s[i]);
+
+
+        if(s[i] === "a" || s[i] === "e" || s[i] === "i" || s[i] === "o" || s[i] === "u"){
+             console.log(s[i]);
+        }
+    }
+
+    for(var j = 0; j < s.length; j++){
+        if(s[j] !== "a" && s[j] !== "e" && s[j] !== "i" && s[j] !== "o" && s[j] !== "u"){
+            console.log(s[j]);
+        }
+    }
+
+
+}
+
+vowelsAndConsonants("javascript");
