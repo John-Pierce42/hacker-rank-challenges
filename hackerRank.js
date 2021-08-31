@@ -192,7 +192,12 @@ function regexVar() {
 //======================================== 7th challenge ================================================
 
 function reverseString(s){
-    return s.split("").reverse().join("");
-}
 
-console.log(reverseString("1234"));
+    try {
+        console.log(s.split("").reverse().join(""));
+    } catch {
+        console.log("s.split is not a function");
+        console.log(s);
+    }
+}
+reverseString("1234");
