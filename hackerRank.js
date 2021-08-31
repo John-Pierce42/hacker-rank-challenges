@@ -21,7 +21,7 @@ function greeting(parameterVariable) {
 //     greeting(parameterVariable);
 // }
 
-greeting("My name is John I'm here to Explore the awesome world of new Technologies!");
+// greeting("My name is John I'm here to Explore the awesome world of new Technologies!");
 
 //==================================== 2nd challenge =======================================================
 
@@ -98,8 +98,8 @@ function getPerimeter(length, width) {
     return 2 * (length + width);
 }
 
-console.log(getPerimeter(2,2));
-console.log(getArea(2,2));
+// console.log(getPerimeter(2,2));
+// console.log(getArea(2,2));
 
 //================================================ 4th challenge =============================
 
@@ -139,7 +139,7 @@ function vowelsAndConsonants(s){
     }
 }
 
-vowelsAndConsonants("javascript");
+// vowelsAndConsonants("javascript");
 
 // ======================================= 5th challenge =================================
 
@@ -154,5 +154,37 @@ function factorial(n){
 
 }
 
-console.log(factorial(4));
+// console.log(factorial(4));
 
+// ==================================== 6th challenge ================================
+
+function regexVar() {
+    /*
+     * Declare a RegExp object variable named 're'
+     * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
+     */
+
+    //============= scratch code ===================
+
+    // var re = {};
+    // re.vowels = "a, e, i, o, u";
+    // var startWith = re.vowels;
+    // var endWith = re.vowels;
+    //
+    // if(/^[aeiou]$|^[aeiou].*[aeiou]$/ ){
+    //     return true;
+    // }
+    // else{
+    //     return false;
+    //
+    // }
+    // return re;
+
+//    ================ solution ===========================
+    let re = /^([aeiou]).+\1$/;
+
+    return re;
+
+}
+
+console.log(regexVar("aba"))
