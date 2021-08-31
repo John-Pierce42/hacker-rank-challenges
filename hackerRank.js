@@ -187,4 +187,12 @@ function regexVar() {
 
 }
 
-console.log(regexVar("aba"))
+// console.log(regexVar("aba"))
+
+//======================================== 7th challenge ================================================
+
+function reverseString(s){
+    return s.split("").reverse().join("");
+}
+
+console.log(reverseString("1234"));
