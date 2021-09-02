@@ -234,6 +234,7 @@ function isPositive(a) {
     //     }
 
     // ============================= solution ==============
+
     // if(a === 0){
     //     throw Error("Zero Error");
     // }
@@ -242,12 +243,20 @@ function isPositive(a) {
     // }
     // return "YES"
 
-//    ============================== another solution ================
-        if(a > 0){
-            return "YES"
-        } else {
-            throw ( a === 0 ? new Error("Zero Error") : new Error("Negative Error"));
-        }
+//    ============================== another solution =================================
+
+//         if(a > 0){
+//             return "YES"
+//         } else {
+//             throw ( a === 0 ? new Error("Zero Error") : new Error("Negative Error"));
+//         }
+
+//        ========================== another solution ==================================
+
+    if(a > 0){
+        return "YES"
+    }
+    throw Error ( a ? "Negative Error" : "Zero Error");
 }
 
-isPositive(-1);
+isPositive(2);
