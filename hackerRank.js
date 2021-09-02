@@ -207,4 +207,34 @@ function reverseString(s){
         console.log(s);
     }
 }
-reverseString("1234");
+// reverseString("1234");
+
+//==================================== 8th challenge ============================================
+
+function isPositive(a) {
+    // try {
+    //     if (a > 0) {
+    //         console.log("YES");
+    //     }
+    //
+    // } catch{
+    //     if (a === 0) {
+    //         throw "Zero Error";
+    //     }
+    //     if (a < 0) {
+    //         throw "Negative Error";
+    //     }
+    //
+    // }
+
+    if(a === 0){
+        throw Error("Zero Error");
+    }
+    if(a < 0){
+        throw Error("Negative Error");
+    }
+    return "YES"
+
+}
+
+isPositive(2);
