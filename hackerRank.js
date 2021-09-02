@@ -211,6 +211,14 @@ function reverseString(s){
 
 //==================================== 8th challenge ============================================
 
+// In this challenge, we practice using throw and catch statements to work with custom error messages.
+// the isPositive function below. it has one integer parameter, a if the value of a is positive, it must return the
+// string "YES". Otherwise, it must throw ans Error according to the following rules:
+
+// if a is 0 throw and Error with message = Zero Error.
+// if a is negative , trow and Error with message = Negative Error.
+//
+
 function isPositive(a) {
     // try {
     //     if (a > 0) {
@@ -224,17 +232,22 @@ function isPositive(a) {
     //     if (a < 0) {
     //         throw "Negative Error";
     //     }
-    //
+
+    // ============================= solution ==============
+    // if(a === 0){
+    //     throw Error("Zero Error");
     // }
+    // if(a < 0){
+    //     throw Error("Negative Error");
+    // }
+    // return "YES"
 
-    if(a === 0){
-        throw Error("Zero Error");
-    }
-    if(a < 0){
-        throw Error("Negative Error");
-    }
-    return "YES"
-
+//    ============================== another solution ================
+        if(a > 0){
+            return "YES"
+        } else {
+            throw ( a === 0 ? new Error("Zero Error") : new Error("Negative Error"));
+        }
 }
 
-isPositive(2);
+isPositive(-1);
