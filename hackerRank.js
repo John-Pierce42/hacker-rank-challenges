@@ -259,4 +259,13 @@ function isPositive(a) {
     throw Error ( a ? "Negative Error" : "Zero Error");
 }
 
-isPositive(2);
+// isPositive(2);
+
+//====================================== 9th challenge ====================================
+
+class Rectangle {
+    constructor(w , h){
+        this.w = w;
+        this.h = h;
+    }
+}
