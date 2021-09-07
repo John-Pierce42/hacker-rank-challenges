@@ -284,4 +284,6 @@ class Square extends Rectangle {
 
 // ================================= 10th challenge =====================================
 
-// this challenge loos to want me to create button using different files and bom and dom
+// this challenge looks to want me to create button using different files and bom and dom.
+
+var click = document.getElementById("btn").addEventListener("click", listner);
