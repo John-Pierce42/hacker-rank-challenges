@@ -336,6 +336,19 @@ function getLetter(s) {
          case "npqrstvwxyz".includes(s[0]):
              letter = "D";
              break;
+         //============================= another solution ======================
+         // case /^[aeiou]/.test(s):
+         //     letter = "A";
+         //     break;
+         // case /^[bcdfg]/.test(s):
+         //     letter = "B";
+         //     break;
+         // case /^[hjklm]/.test(s):
+         //     letter = "C";
+         //     break;
+         // case /^[npqrstvwxyz]/.test(s):
+         //     letter = "D";
+         //     break;
      }
      return letter;
 }
