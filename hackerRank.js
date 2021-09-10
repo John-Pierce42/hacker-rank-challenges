@@ -323,16 +323,21 @@ console.log(getGrade(11));
 
 function getLetter(s) {
     let letter;
-    let A = ["a", "e", "i", "o", "u"];
-    for (let i = 0; i < s.length; i++) {
-        switch () {
-            case s.charAt(i) === A:
-                return letter = "A";
-        }
-
-
-    }
-    return letter;
+     switch (true){
+         case "aeiou".includes(s[0]):
+             letter = "A";
+             break;
+         case "bcdfg".includes(s[0]):
+             letter = "B";
+             break;
+         case "hjklm".includes(s[0]):
+             letter = "C";
+             break;
+         case "npqrstvwxyz".includes(s[0]):
+             letter = "D";
+             break;
+     }
+     return letter;
 }
 
-console.log(getLetter("ada"));
+console.log(getLetter("fairlady z"));
