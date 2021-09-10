@@ -318,3 +318,21 @@ function getGrade(score){
 }
 
 console.log(getGrade(11));
+
+// ======================================= 12th challenge =================================
+
+function getLetter(s) {
+    let letter;
+    let A = ["a", "e", "i", "o", "u"];
+    for (let i = 0; i < s.length; i++) {
+        switch () {
+            case s.charAt(i) === A:
+                return letter = "A";
+        }
+
+
+    }
+    return letter;
+}
+
+console.log(getLetter("ada"));
