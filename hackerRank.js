@@ -368,6 +368,7 @@ function getLetter(s) {
 
 //Print area as the first line of output and print perimeter as the second line of output.
 
+
 function main() {
     // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
     const r = readLine();
@@ -388,6 +389,8 @@ function main() {
 
 console.log(main());
 
+// ============================================ 14th challenge ========================================
+
 function getSecondLargest(nums) {
     let largest = nums[0];
     let secondLargest = nums[0];
@@ -405,4 +408,24 @@ function getSecondLargest(nums) {
     }
 
     return secondLargest;
+}
+
+// ==================================== hacker rank coding test ===========================
+//=== question 1 ===
+/*
+ * Complete the 'findNumber' function below.
+ *
+ * The function is expected to return a STRING.
+ * The function accepts following parameters:
+ *  1. INTEGER_ARRAY arr
+ *  2. INTEGER k
+ */
+
+function findNumber(arr, k) {
+    // Write your code here
+    if(arr.includes(k)){
+        return "YES"
+    } else{
+        return "NO"
+    }
 }
