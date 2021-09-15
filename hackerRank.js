@@ -444,4 +444,20 @@ function findNumber(arr, k) {
 //======================================== 15th challenge ====================================
 
 
-//
+function getCount(objects){
+    // let x = {};
+    // let y = {};
+    //
+    //
+    // if(x === y){
+    //
+    // }
+
+    let n = 0;
+    for(let o of objects) {
+        n += (o.x === o.y);
+    }
+    return n;
+
+
+}
