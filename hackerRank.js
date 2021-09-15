@@ -387,7 +387,7 @@ function main() {
     }
 }
 
-console.log(main());
+// console.log(main());
 
 // ============================================ 14th challenge ========================================
 
@@ -410,6 +410,17 @@ function getSecondLargest(nums) {
     return secondLargest;
 }
 
+// function getSecondLargest(nums){
+//
+//     let firstLargest = Math.max(nums);
+//     let index = nums.indexOf(firstLargest);
+//     nums.splice(index, 1);
+//     let secondLargest = Math.max(nums);
+//     return secondLargest
+// }
+//
+// console.log(getSecondLargest([1,2,3,4,5]));
+
 // ==================================== hacker rank coding test ===========================
 //=== question 1 ===
 /*
@@ -429,3 +440,8 @@ function findNumber(arr, k) {
         return "NO"
     }
 }
+
+//======================================== 15th challenge ====================================
+
+
+//
