@@ -459,5 +459,6 @@ function getCount(objects){
     }
     return n;
 
-
+//    another solution
+//    return objects.filter(function(o){return o.x==o.y}).length
 }
