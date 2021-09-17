@@ -263,24 +263,24 @@ function isPositive(a) {
 
 //====================================== 9th challenge ====================================
 
-class Rectangle {
-    constructor(w , h){
-        this.w = w;
-        this.h = h;
-    }
-}
+// class Rectangle {
+//     constructor(w , h){
+//         this.w = w;
+//         this.h = h;
+//     }
+// }
 
-Rectangle.prototype.area = function() {
-    return(this.w * this.h)
-}
+// Rectangle.prototype.area = function() {
+//     return(this.w * this.h)
+// }
 
-class Square extends Rectangle {
-    constructor(s) {
-        super(s);
-        this.h = s;
-        this.w = s;
-    }
-}
+// class Square extends Rectangle {
+//     constructor(s) {
+//         super(s);
+//         this.h = s;
+//         this.w = s;
+//     }
+// }
 
 // ================================= 10th challenge =====================================
 
@@ -462,3 +462,21 @@ function getCount(objects){
 //    another solution
 //    return objects.filter(function(o){return o.x==o.y}).length
 }
+
+//==================================== 16th challenge =========================================
+
+function Rectangle(a, b){
+    console.log(a);
+    console.log(b);
+    let length = a * 2;
+    let width = b * 2;
+    let perimeter = length + width;
+    console.log(perimeter);
+
+    let area = a * b;
+    console.log(area);
+
+
+}
+
+console.log(Rectangle(4,5));
