@@ -466,17 +466,24 @@ function getCount(objects){
 //==================================== 16th challenge =========================================
 
 function Rectangle(a, b){
-    console.log(a);
-    console.log(b);
-    let length = a * 2;
-    let width = b * 2;
-    let perimeter = length + width;
-    console.log(perimeter);
+    // console.log(a);
+    // console.log(b);
+    // let length = a * 2;
+    // let width = b * 2;
+    // let perimeter = length + width;
+    // console.log(perimeter);
+    //
+    // let area = a * b;
+    // console.log(area);
 
-    let area = a * b;
-    console.log(area);
+//    ========== returning an Object =========
 
-
+    return {
+        length: a,
+        width: b,
+        perimeter: 2 * (a + b),
+        area: a * b
+    }
 }
 
 console.log(Rectangle(4,5));
