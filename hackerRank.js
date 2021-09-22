@@ -491,20 +491,25 @@ function Rectangle(a, b){
 //=================================== 17th challenge ========================================
 function modifyArray(nums) {
 
-    var something = function(n) {
+    // var something = function(n) {
         // return (n % 2 ===0) ? n * 2 : n * 3;
 
-        //    another solution
-        if(n % 2 === 0){
-            return n * 2;
-        } else{
-            return n * 3;
-        }
-    }
+        // === another solution ===
+
+        // if(n % 2 === 0){
+        //     return n * 2;
+        // } else{
+        //     return n * 3;
+        // }
+    // }
+
+    //   === another solution ===
+
+    var something = n => n = (n % 2 === 0) ? n * 2 : n * 3;
 
     var newArray = nums.map(something);
     return newArray;
 
-//    another solution
+
 }
 console.log(modifyArray([1,2,3,4,5]));
