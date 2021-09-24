@@ -513,3 +513,24 @@ function modifyArray(nums) {
 
 }
 console.log(modifyArray([1,2,3,4,5]));
+
+class Polygon {
+    // constructor(int = []){
+    //     this.int = int;
+    // }
+    //
+    // perimether(){
+    //     let triangle = new Polygon([3,4,5])
+    //     return
+    // }
+
+    constructor(sides){
+        this.sides = sides;
+    }
+    perimeter(){
+        return this.sides.reduce(function add(a, b){return a + b;})
+    }
+
+
+
+}
