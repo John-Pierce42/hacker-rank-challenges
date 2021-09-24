@@ -512,25 +512,38 @@ function modifyArray(nums) {
 
 
 }
-console.log(modifyArray([1,2,3,4,5]));
+// console.log(modifyArray([1,2,3,4,5]));
 
+
+// =====================================  class javascript challenge ======================d
+// class Polygon {
+//     // constructor(int = []){
+//     //     this.int = int;
+//     // }
+//     //
+//     // perimether(){
+//     //     let triangle = new Polygon([3,4,5])
+//     //     return
+//     // }
+//
+//     constructor(sides){
+//         this.sides = sides;
+//     }
+//     perimeter(){
+//         return this.sides.reduce(function add(a, b){return a + b;})
+//     }
+// }
+//  ============== another solution for  class challenge =================================
 class Polygon {
-    // constructor(int = []){
-    //     this.int = int;
-    // }
-    //
-    // perimether(){
-    //     let triangle = new Polygon([3,4,5])
-    //     return
-    // }
-
-    constructor(sides){
+    constructor(sides) {
         this.sides = sides;
     }
-    perimeter(){
-        return this.sides.reduce(function add(a, b){return a + b;})
+
+    perimeter() {
+        var sum = 0;
+        for(var i = 0; i < this.sides.length; i++) {
+            sum = sum + this.sides[i];
+        }
+        return sum;
     }
-
-
-
 }
