@@ -1,0 +1,16 @@
+
+
+#btns{
+    width: 75%;
+}
+
+.buttonContainer{
+    position: relative;
+}
+
+.buttonClass{
+
+    width: 30%;
+    height: 48px;
+    font-size: 24px;
+}
