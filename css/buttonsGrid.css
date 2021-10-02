@@ -2,13 +2,14 @@
 
 #btns{
     width: 75%;
+
 }
 
 .buttonContainer{
-    position: relative;
+
 }
 
-.buttonClass{
+.buttonContainer > .buttonClass{
 
     width: 30%;
     height: 48px;
